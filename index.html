@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<p>Hello</p>
+<button class="latte">Get Latte</button>
+<button class="capuchino">Get Capuchino</button>
+<button class="americano">Get Americano</button>
+
+<script type="text/javascript" src="start.js"></script>
+<script>
+    'use strict';
+
+    const myCoffeMachine = window._;
+    let latteBtn = document.querySelector('.latte');
+
+    latteBtn.addEventListener('click', () => {
+        const myLatte = myCoffeMachine.getLatte();
+
+        console.log(myLatte);
+        console.log(myCoffeMachine);
+    })
+
+
+</script>
+</body>
+</html>
